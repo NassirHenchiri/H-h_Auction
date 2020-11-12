@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.Exodia.H_and_N">
+
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity android:name="com.Exodia.H_and_N.dialg" />
+        <activity android:name="com.Exodia.H_and_N.Encheree" />
+        <activity android:name="com.Exodia.H_and_N.Inscription" />
+        <activity android:name="com.Exodia.H_and_N.Ajoutvente" />
+        <activity android:name="com.Exodia.H_and_N.notifs" />
+        <activity android:name="com.Exodia.H_and_N.Modifproduit" />
+        <activity android:name="com.Exodia.H_and_N.Ajoutproduit" />
+        <activity android:name="com.Exodia.H_and_N.bid" />
+        <activity android:name="com.Exodia.H_and_N.achat" />
+        <activity android:name="com.Exodia.H_and_N.produits" />
+        <activity android:name="com.Exodia.H_and_N.utilisateur" />
+        <activity android:name="com.Exodia.H_and_N.MainActivity" />
+        <activity android:name="com.Exodia.H_and_N.Login"></activity>
+        <activity android:name="com.Exodia.H_and_N.Splash_screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

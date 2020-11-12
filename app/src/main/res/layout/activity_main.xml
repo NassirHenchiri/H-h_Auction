@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_main"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:elevation="999dp"
+            android:gravity="bottom"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="63dp"
+                android:layout_height="51dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/splash"
+                 />
+
+            <TextView
+                android:id="@+id/nameusseracceuil"
+                style="@style/viewParent.headerText"
+                android:layout_width="115dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="182dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="0dp"
+                android:layout_toEndOf="@id/profile_image"
+                android:maxLines="1"
+                android:text="name user" />
+
+            <TextView
+                android:id="@+id/nameusseracceuil2"
+                style="@style/viewParent.headerText"
+                android:layout_width="155dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="44dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginEnd="139dp"
+                android:layout_marginBottom="0dp"
+                android:layout_toEndOf="@id/profile_image"
+                android:maxLines="1"
+                android:text="Bienvenue ," />
+
+        </RelativeLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="?attr/actionBarSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/normalPadding"
+                android:paddingRight="@dimen/normalPadding">
+
+                <include layout="@layout/card_header" />
+
+                <!--replace with recycler view-->
+                <LinearLayout
+                    android:layout_width="328dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        style="@style/tagTextStyle"
+                        android:text="#Jacket" />
+
+                    <TextView
+                        style="@style/tagTextStyle"
+                        android:text="#vetements_femmes" />
+
+                    <TextView
+                        style="@style/tagTextStyle"
+                        android:text="#PC" />
+
+
+                </LinearLayout>
+
+                <!--replace with recycler view-->
+                <LinearLayout
+                    android:layout_width="258dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp">
+
+                    <TextView
+                        style="@style/tagTextStyle"
+                        android:text="#Immobiliers" />
+
+                    <TextView
+                        style="@style/tagTextStyle"
+                        android:text="#informatiques" />
+
+
+                </LinearLayout>
+
+                <!--replace with recycler view-->
+                <LinearLayout
+                    android:layout_width="307dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        style="@style/tagTextStyle"
+                        android:text="#voiturs" />
+
+                    <TextView
+                        style="@style/tagTextStyle"
+                        android:text="#vetements_bébé" />
+
+                    <TextView
+                        style="@style/tagTextStyle"
+                        android:text="#jeux" />
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        style="@style/viewParent.headerText"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:text="nouveaux produits" />
+
+                </RelativeLayout>
+
+                <!--remove the below layout with recycler view, use card_product as model for design-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <include
+                        layout="@layout/card_product"
+                        android:layout_width="430dp"
+                        android:layout_height="260dp"
+                        android:layout_gravity="center" />
+
+                    <include layout="@layout/card_product" />
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        style="@style/viewParent.headerText"
+                        android:layout_width="143dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:text="Nos Tendences " />
+
+                    <TextView
+                        style="@style/viewParent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="@dimen/headerMoreTextSize"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <!--remove the below layout with recycler view, use card poplar courses as model for design-->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <include layout="@layout/card_trends" />
+
+                    <include layout="@layout/card_trends" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:background="@color/Splashcolor"
+        android:layout_height="match_parent"
+        app:menu="@menu/navigation_menu"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        android:id="@+id/nv">
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="438dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ViewFlipper
+            android:id="@+id/view_flipper"
+            android:layout_width="405dp"
+            android:layout_height="221dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="33dp"
+            android:inAnimation="@android:anim/slide_in_left"
+            android:outAnimation="@android:anim/slide_out_right">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view1"
+                android:layout_width="wrap_content"
+                android:layout_height="217dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/card_margin"
+                android:outlineAmbientShadowColor="@color/colorPrimary"
+                card_view:cardBackgroundColor="@color/darkTextColor"
+                card_view:cardCornerRadius="20dp"
+
+                card_view:cardElevation="5dp"
+                card_view:cardPreventCornerOverlap="false">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="259dp"
+                    android:layout_height="221dp">
+
+                    <ImageView
+                        android:id="@+id/imageView61"
+                        android:layout_width="43dp"
+                        android:layout_height="39dp"
+                        card_view:layout_constraintEnd_toEndOf="parent"
+                        card_view:layout_constraintHorizontal_bias="0.907"
+                        card_view:layout_constraintStart_toStartOf="parent"
+                        card_view:layout_constraintTop_toTopOf="parent"
+                        card_view:srcCompat="@drawable/ic_bookmark_black_24dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView51"
+                        android:layout_width="133dp"
+                        android:layout_height="134dp"
+                        card_view:layout_constraintEnd_toEndOf="parent"
+                        card_view:layout_constraintStart_toStartOf="parent"
+                        card_view:layout_constraintTop_toTopOf="parent"
+                        card_view:srcCompat="@drawable/costum1" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="232dp"
+                        android:layout_height="71dp"
+                        card_view:cardBackgroundColor="#FF9800"
+                        card_view:cardCornerRadius="20dp"
+                        card_view:layout_constraintBottom_toBottomOf="parent"
+                        card_view:layout_constraintEnd_toEndOf="parent"
+                        card_view:layout_constraintStart_toStartOf="parent"
+                        card_view:layout_constraintTop_toBottomOf="@+id/imageView51"
+                        card_view:layout_constraintVertical_bias="0.505">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="239dp"
+                            android:layout_height="63dp">
+
+                            <TextView
+                                android:id="@+id/textView31"
+                                android:layout_width="140dp"
+                                android:layout_height="44dp"
+                                android:fontFamily="@font/baloo_paaji"
+                                android:text="2020"
+                                android:gravity="center"
+                                android:textColor="@color/darkTextColor"
+                                android:textSize="24sp"
+                                card_view:layout_constraintEnd_toEndOf="parent"
+                                card_view:layout_constraintStart_toStartOf="parent"
+                                tools:layout_editor_absoluteY="0dp" />
+
+                            <TextView
+                                android:id="@+id/textView41"
+                                android:layout_width="127dp"
+                                android:layout_height="28dp"
+                                android:fontFamily="@font/bangers"
+                                android:text="Collections"
+                                android:gravity="center"
+                                android:textColor="@color/design_default_color_primary_dark"
+                                android:textSize="19sp"
+                                card_view:layout_constraintBottom_toBottomOf="parent"
+                                card_view:layout_constraintEnd_toEndOf="parent"
+                                card_view:layout_constraintHorizontal_bias="0.504"
+                                card_view:layout_constraintStart_toStartOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view2"
+                android:layout_width="266dp"
+                android:layout_height="217dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/card_margin"
+                android:outlineAmbientShadowColor="@color/colorPrimary"
+                card_view:cardBackgroundColor="@color/darkTextColor"
+                card_view:cardCornerRadius="20dp"
+
+                card_view:cardElevation="5dp"
+                card_view:cardPreventCornerOverlap="false">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="259dp"
+                    android:layout_height="221dp">
+
+                    <ImageView
+                        android:id="@+id/imageView62"
+                        android:layout_width="43dp"
+                        android:layout_height="39dp"
+                        card_view:layout_constraintEnd_toEndOf="parent"
+                        card_view:layout_constraintHorizontal_bias="0.878"
+                        card_view:layout_constraintStart_toStartOf="parent"
+                        card_view:layout_constraintTop_toTopOf="parent"
+                        card_view:srcCompat="@drawable/ic_bookmark_black_24dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView52"
+                        android:layout_width="149dp"
+                        android:layout_height="137dp"
+                        card_view:layout_constraintEnd_toEndOf="parent"
+                        card_view:layout_constraintStart_toStartOf="parent"
+                        card_view:layout_constraintTop_toTopOf="parent"
+                        card_view:srcCompat="@drawable/costum1" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="232dp"
+                        android:layout_height="71dp"
+                        card_view:cardBackgroundColor="#FF9800"
+                        card_view:cardCornerRadius="20dp"
+                        card_view:layout_constraintBottom_toBottomOf="parent"
+                        card_view:layout_constraintEnd_toEndOf="parent"
+                        card_view:layout_constraintStart_toStartOf="parent"
+                        card_view:layout_constraintTop_toBottomOf="@+id/imageView52"
+                        card_view:layout_constraintVertical_bias="0.505">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="239dp"
+                            android:layout_height="63dp">
+
+                            <TextView
+                                android:id="@+id/textView33"
+                                android:layout_width="140dp"
+                                android:layout_height="44dp"
+                                android:fontFamily="@font/baloo_paaji"
+                                android:text="2020"
+                                android:gravity="center"
+                                android:textColor="@color/darkTextColor"
+                                android:textSize="24sp"
+                                card_view:layout_constraintEnd_toEndOf="parent"
+                                card_view:layout_constraintStart_toStartOf="parent"
+                                tools:layout_editor_absoluteY="0dp" />
+
+                            <TextView
+                                android:id="@+id/textView42"
+                                android:layout_width="127dp"
+                                android:layout_height="28dp"
+                                android:fontFamily="@font/bangers"
+                                android:text="Collections"
+                                android:gravity="center"
+                                android:textColor="@color/design_default_color_primary_dark"
+                                android:textSize="19sp"
+                                card_view:layout_constraintBottom_toBottomOf="parent"
+                                card_view:layout_constraintEnd_toEndOf="parent"
+                                card_view:layout_constraintHorizontal_bias="0.504"
+                                card_view:layout_constraintStart_toStartOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="266dp"
+                android:layout_height="217dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/card_margin"
+                android:outlineAmbientShadowColor="@color/colorPrimary"
+                card_view:cardBackgroundColor="@color/darkTextColor"
+                card_view:cardCornerRadius="20dp"
+
+                card_view:cardElevation="5dp"
+                card_view:cardPreventCornerOverlap="false">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="259dp"
+                    android:layout_height="221dp">
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="43dp"
+                        android:layout_height="39dp"
+                        card_view:layout_constraintEnd_toEndOf="parent"
+                        card_view:layout_constraintHorizontal_bias="0.878"
+                        card_view:layout_constraintStart_toStartOf="parent"
+                        card_view:layout_constraintTop_toTopOf="parent"
+                        card_view:srcCompat="@drawable/ic_bookmark_black_24dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="149dp"
+                        android:layout_height="137dp"
+                        card_view:layout_constraintEnd_toEndOf="parent"
+                        card_view:layout_constraintStart_toStartOf="parent"
+                        card_view:layout_constraintTop_toTopOf="parent"
+                        card_view:srcCompat="@drawable/costum1" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="232dp"
+                        android:layout_height="71dp"
+                        card_view:cardBackgroundColor="#FF9800"
+                        card_view:cardCornerRadius="20dp"
+                        card_view:layout_constraintBottom_toBottomOf="parent"
+                        card_view:layout_constraintEnd_toEndOf="parent"
+                        card_view:layout_constraintStart_toStartOf="parent"
+                        card_view:layout_constraintTop_toBottomOf="@+id/imageView5"
+                        card_view:layout_constraintVertical_bias="0.505">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="239dp"
+                            android:layout_height="63dp">
+
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="140dp"
+                                android:layout_height="44dp"
+                                android:fontFamily="@font/baloo_paaji"
+                                android:text="2020"
+                                android:gravity="center"
+                                android:textColor="@color/darkTextColor"
+                                android:textSize="24sp"
+                                card_view:layout_constraintEnd_toEndOf="parent"
+                                card_view:layout_constraintStart_toStartOf="parent"
+                                tools:layout_editor_absoluteY="0dp" />
+
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_width="127dp"
+                                android:layout_height="28dp"
+                                android:fontFamily="@font/bangers"
+                                android:text="Collections"
+                                android:gravity="center"
+                                android:textColor="@color/design_default_color_primary_dark"
+                                android:textSize="19sp"
+                                card_view:layout_constraintBottom_toBottomOf="parent"
+                                card_view:layout_constraintEnd_toEndOf="parent"
+                                card_view:layout_constraintHorizontal_bias="0.504"
+                                card_view:layout_constraintStart_toStartOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+        </ViewFlipper>
+
+    </RelativeLayout>
+
+</LinearLayout>

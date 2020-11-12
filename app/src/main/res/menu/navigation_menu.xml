@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/profil"
+        android:icon="@drawable/ic_portrait_black_24dp"
+        android:title="Mon profil"/>
+    <item android:id="@+id/produits"
+        android:icon="@drawable/cosmetic"
+        android:title="Produits"/>
+    <item android:id="@+id/enchere"
+        android:icon="@drawable/auction"
+        android:title="Enchere"/>
+    <item android:id="@+id/payer"
+        android:icon="@drawable/coin"
+        android:title="paiement"/>
+    <item android:id="@+id/lougout"
+        android:icon="@drawable/exit"
+        android:title="Déconnecter"/>
+
+</menu>

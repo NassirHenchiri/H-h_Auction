@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ajoutvente">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/image_bn"
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/add_btn" />
+
+        <EditText
+            android:id="@+id/edit_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/input_outline"
+            android:ems="10"
+            android:hint="Libéllé de produit"
+            android:padding="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/Splashcolor" />
+
+        <EditText
+            android:id="@+id/edit_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:inputType="datetime"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/Splashcolor"
+            android:background="@drawable/input_outline"
+            android:ems="10"
+            android:hint="Date d'expiration"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/edit_base_bid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/Splashcolor"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/input_outline"
+            android:inputType="date"
+            android:ems="10"
+            android:hint="Bid cost"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/edit_start_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/Splashcolor"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/input_outline"
+            android:ems="10"
+            android:hint="Temps de début"
+
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/edit_end_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/input_outline"
+            android:ems="10"
+            android:hint="Temps de fin"
+            android:padding="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/Splashcolor"/>
+
+        <RelativeLayout
+            android:layout_width="401dp"
+            android:layout_height="91dp">
+
+            <Button
+                android:id="@+id/submit_bn"
+                android:layout_width="218dp"
+                android:layout_height="56dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="2sp"
+                android:layout_marginEnd="123dp"
+                android:layout_marginRight="123dp"
+                android:layout_marginBottom="13dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn"
+                android:padding="10dp"
+                android:text="Confirmer"
+                android:textColor="#fff"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
